@@ -113,3 +113,35 @@ fun GreetingPreview() {
     }
 }
 
+/*Extras*/
+
+val alphabeticalMenu = cookies.sortedBy {
+    it.name
+}
+val totalPrice = cookies.fold(0.0) {total, cookie ->
+    total + cookie.price
+}
+val groupedMenu = cookies.groupBy { it.softBaked }
+println("Soft cookies:")
+softBakedMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+println("Crunchy cookies:")
+crunchyMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+val softBakedMenu = cookies.filter {
+    it.softBaked
+}
+println("Soft cookies:")
+softBakedMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+val fullMenu = cookies.map {
+    "${it.name} - $${it.price}"
+}
+fun main() {
+    cookies.forEach {
+        println("Menu item: $it")
+    }
+}
