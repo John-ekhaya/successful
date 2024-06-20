@@ -2,11 +2,12 @@ Q1
  
 1.1) B. <T> 
 
-1.2) B. A data type that can represent different types of values depending on how it’s instantiated 
+1.2) B. A data type that can represent different types of values depending on how itâ€™s instantiated 
 
 1.3) C. A function that produces a unique value for each item in the collection 
 
 1.4) C. Using the dot operator 
+
 1.5) A. A special type of class used to create types with a limited set of possible values 
 
 1.6) C. To represent data and automatically implement certain methods like toString() 
